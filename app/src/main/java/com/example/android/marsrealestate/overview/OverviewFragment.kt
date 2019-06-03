@@ -31,6 +31,7 @@ class OverviewFragment : Fragment() {
 
     /**
      * Lazily initialize our [OverviewViewModel].
+     * Which means that it is created the first time that is used
      */
     private val viewModel: OverviewViewModel by lazy {
         ViewModelProviders.of(this).get(OverviewViewModel::class.java)
